@@ -25,6 +25,18 @@ MyBenchmark.allocateLargeArrayOperation  thrpt    5  ≈ 10⁻⁵           ops/
 MyBenchmark.stringOperation               avgt    5   0.561 ±  0.007   ns/op
 ```
 
+## Set up sample project
+Set up the sample project using Maven Archetype with the command.
+```sh
+mvn archetype:generate \
+  -DinteractiveMode=false \
+  -DarchetypeGroupId=org.openjdk.jmh \
+  -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+  -DgroupId=com.example \
+  -DartifactId=jmh \ 
+  -Dversion=1.0
+```
+
 ## Understanding JMH Modes
 JMH supports multiple benchmarking modes:
 
